@@ -1,327 +1,224 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="color-scheme" content="dark" />
-    <title>LEO CURRY68 - Resume (Hacker Edition)</title>
+    <title>刘绍昆 | Clinical & Translational Research Profile</title>
     <meta
       name="description"
-      content="A hacker-style resume page for GitHub Pages. Pure vanilla HTML/CSS/JS."
+      content="刘绍昆双语学术履历网站：宣武医院鼻颅底解剖、头颈癌、多组学、生物信息工程与类器官研究。Vanilla HTML/CSS/JS。"
     />
     <link rel="stylesheet" href="assets/style.css" />
   </head>
-
   <body>
-    <a class="skip-link" href="#content">Skip to content</a>
+    <a class="skip-link" href="#content">Skip to content / 跳转正文</a>
 
     <header class="topbar">
       <div class="brand">
-        <span class="sig">LC68</span>
-        <div class="brand-text">
-          <div class="glitch" data-glitch-text="LEO CURRY68">LEO CURRY68</div>
-          <div class="subtitle" id="randomSubtitle">loading…</div>
+        <div class="sig">LSK</div>
+        <div>
+          <div class="brand-title">Shaokun Liu, MD / PhD Candidate</div>
+          <div class="brand-sub" id="randomSubtitle">Head & Neck Oncology / 头颈肿瘤精准研究</div>
         </div>
       </div>
-
       <nav class="nav">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="#about">About 简介</a>
+        <a href="#focus">Focus 方向</a>
+        <a href="#training">Training 经历</a>
+        <a href="#research">Research 科研</a>
+        <a href="#contact">Contact 联系</a>
       </nav>
     </header>
 
     <main id="content" class="page">
       <section class="hero">
-        <div class="hero-left">
-          <h1 class="title">
-            Security & Reverse Engineer
-            <span class="hint">/ alias: nullbyte</span>
-          </h1>
-          <p class="lede">
-            I break things on purpose: analyze binaries, hunt vulnerabilities, and ship
-            safer systems. This page is intentionally “vanilla” for GitHub Pages.
+        <div class="hero-content">
+          <p class="kicker">Clinical + Bioinformatics + Organoid Platform</p>
+          <h1>宣武医院鼻颅底解剖 / 头颈癌 / 多组学 / 生物信息工程师 / 类器官</h1>
+          <p class="lead">
+            面向头颈肿瘤精准医疗的转化研究者。聚焦临床问题驱动的机制探索，结合
+            multi-omics、single-cell、spatial transcriptomics 与 patient-derived organoids (PDO)
+            构建从样本到机制再到策略评估的一体化研究路径。
           </p>
-
-          <div class="cta-row">
-            <a class="btn primary" href="#contact">Request a chat</a>
-            <a class="btn ghost" href="#projects">See selected work</a>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#research">View Research / 查看科研</a>
+            <a class="btn btn-light" href="#contact">Contact / 联系方式</a>
           </div>
-
-          <div class="meta-grid" role="list" aria-label="Quick facts">
-            <div class="meta" role="listitem">
-              <div class="meta-k">Location</div>
-              <div class="meta-v" id="randomLocation">—</div>
-            </div>
-            <div class="meta" role="listitem">
-              <div class="meta-k">Current Mode</div>
-              <div class="meta-v" id="randomMode">—</div>
-            </div>
-            <div class="meta" role="listitem">
-              <div class="meta-k">Focus</div>
-              <div class="meta-v" id="randomFocus">—</div>
-            </div>
+          <div class="hero-tags">
+            <span>Head & Neck Cancer</span>
+            <span>Skull Base Anatomy</span>
+            <span>Multi-Omics</span>
+            <span>Bioinformatics Engineer</span>
+            <span>Organoid Platform</span>
           </div>
         </div>
-
-        <aside class="terminal" aria-label="Terminal status">
-          <div class="terminal-head">
-            <span class="dot red"></span>
-            <span class="dot yellow"></span>
-            <span class="dot green"></span>
-            <div class="terminal-title">ops.log</div>
+        <aside class="hero-panel">
+          <div class="panel-head">
+            <strong>Research Snapshot / 科研快照</strong>
+            <button class="btn btn-mini" id="rerollBtn" type="button">Refresh</button>
           </div>
-
-          <pre class="terminal-body" id="terminalBody"><code><!-- filled by JS --></code></pre>
-
-          <div class="terminal-foot">
-            <button class="btn tiny" id="rerollBtn" type="button">Reroll</button>
-            <span class="terminal-note" id="checksum">checksum: —</span>
-          </div>
+          <pre class="panel-log" id="terminalBody"><code><!-- filled by JS --></code></pre>
+          <div class="panel-foot" id="checksum">checksum: --</div>
         </aside>
+      </section>
+
+      <section class="stats">
+        <article class="stat-card">
+          <h3>Education / 学历</h3>
+          <p>PhD Candidate (Charite)</p>
+          <small>博士在读，肿瘤学方向</small>
+        </article>
+        <article class="stat-card">
+          <h3>Clinical Training / 临床训练</h3>
+          <p>Xuanwu Hospital ENT Residency</p>
+          <small>耳鼻咽喉科住院医师规范化培训</small>
+        </article>
+        <article class="stat-card">
+          <h3>Core Field / 核心领域</h3>
+          <p>HNSCC Translational Research</p>
+          <small>头颈鳞癌机制与精准诊疗</small>
+        </article>
       </section>
 
       <section class="section" id="about">
         <div class="section-head">
-          <h2>About</h2>
-          <div class="section-badge">volatile / resume</div>
+          <h2>About / 个人简介</h2>
         </div>
         <div class="card">
           <p>
-            I prefer low-level clarity over buzzwords. My toolkit mixes static analysis,
-            dynamic instrumentation, fuzzing, and threat modeling.
-            I enjoy turning unclear “weird behavior” into deterministic test cases.
-          </p>
-          <p class="muted">
-            When I’m not reversing, I write small tools that keep teams fast:
-            parsers, diff scripts, and dashboards that answer “what changed?”
+            我是刘绍昆（Shaokun Liu），博士导师为 Ingeborg Tinhofer-Keilholz，硕士导师为王振霖教授。
+            I work at the interface of clinical oncology and computational biology, with a focus on
+            tumor immune microenvironment, patient stratification, and translational validation.
           </p>
         </div>
       </section>
 
-      <section class="section" id="skills">
+      <section class="section" id="focus">
         <div class="section-head">
-          <h2>Skills</h2>
-          <div class="section-badge">stack / signals</div>
+          <h2>Research Focus / 研究方向</h2>
         </div>
-
-        <div class="grid">
-          <div class="card">
-            <h3>Reverse & Exploit</h3>
-            <ul class="list">
-              <li>Disassembly triage & call graph reconstruction</li>
-              <li>Memory corruption analysis (heap/stack)</li>
-              <li>ROP chain reasoning & mitigations</li>
-              <li>Protocol reversing & differential testing</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Engineering</h3>
-            <ul class="list">
-              <li>Python tooling & reproducible pipelines</li>
-              <li>Rust/C++ code reading & patching</li>
-              <li>CI hardening + secure-by-default checks</li>
-              <li>Telemetry for fast incident response</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Offense → Defense</h3>
-            <ul class="list">
-              <li>Threat models & abuse-case design</li>
-              <li>Fuzzing strategies & harnesses</li>
-              <li>Secure coding reviews & mitigations</li>
-              <li>Bug reports written for quick fixes</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Signature</h3>
-            <div class="pill-row" aria-label="Hacker traits">
-              <span class="pill">curious</span>
-              <span class="pill">methodical</span>
-              <span class="pill">low-noise</span>
-              <span class="pill">test-driven</span>
-              <span class="pill">no fear of hex</span>
-            </div>
-            <p class="muted">
-              My “best skill” is turning messy observations into a clean, shareable explanation.
-            </p>
-          </div>
+        <div class="grid two">
+          <article class="card feature">
+            <h3>宣武医院鼻颅底解剖 / Skull Base Anatomy</h3>
+            <p>围绕鼻颅底相关解剖与临床路径，强化临床问题导向的研究设计与术式理解。</p>
+          </article>
+          <article class="card feature">
+            <h3>头颈癌 / Head & Neck Cancer</h3>
+            <p>聚焦 HNSCC 的免疫微环境、复发机制、治疗反应预测及临床转化应用。</p>
+          </article>
+          <article class="card feature">
+            <h3>多组学 / Multi-Omics</h3>
+            <p>整合单细胞组学、空间转录组与 bulk 数据，构建多层级生物学解释框架。</p>
+          </article>
+          <article class="card feature">
+            <h3>生物信息工程师 / Bioinformatics Engineer</h3>
+            <p>具备科研数据工程与分析流程搭建能力，支持机制挖掘、可视化与数据库开发。</p>
+          </article>
+          <article class="card feature">
+            <h3>类器官平台 / Organoid Platform</h3>
+            <p>开发患者来源肿瘤类器官（PDO）用于药物筛选、机制验证与转化研究评估。</p>
+          </article>
         </div>
       </section>
 
-      <section class="section" id="experience">
+      <section class="section" id="training">
         <div class="section-head">
-          <h2>Experience</h2>
-          <div class="section-badge">history / fragments</div>
+          <h2>Training & Clinical Experience / 教育与临床经历</h2>
         </div>
-
-        <div class="timeline" role="list" aria-label="Experience timeline">
-          <article class="t-item" role="listitem">
-            <div class="t-year">2025</div>
-            <div class="t-body">
-              <h3>Security Engineer (Red Team Adjacent)</h3>
-              <p class="muted">
-                Led reverse-audit cycles on a legacy service: improved crash triage,
-                shipped fuzz harnesses, and reduced regression risk.
-              </p>
-              <div class="tags">
-                <span class="tag">fuzzing</span>
-                <span class="tag">crash triage</span>
-                <span class="tag">mitigations</span>
-              </div>
+        <div class="timeline">
+          <article class="t-item">
+            <div class="t-year">2024.09 - Present</div>
+            <div>
+              <h3>Charite - Universitatsmedizin Berlin | PhD in Oncology</h3>
+              <p>Research training in precision oncology, organoid modeling, and systems-level profiling.</p>
             </div>
           </article>
-
-          <article class="t-item" role="listitem">
-            <div class="t-year">2023 - 2024</div>
-            <div class="t-body">
-              <h3>Firmware / Protocol Reverse Engineer</h3>
-              <p class="muted">
-                Built packet decoders and replay tools. Documented undocumented protocol states,
-                enabling safer integration and deterministic test suites.
-              </p>
-              <div class="tags">
-                <span class="tag">protocol reversing</span>
-                <span class="tag">instrumentation</span>
-                <span class="tag">replay tooling</span>
-              </div>
+          <article class="t-item">
+            <div class="t-year">2020.09 - 2023.07</div>
+            <div>
+              <h3>Xuanwu Hospital, Capital Medical University | MSc (ENT)</h3>
+              <p>耳鼻咽喉科学专业型硕士；完成住院医师规范化培训，取得执业医师证与规培证。</p>
             </div>
           </article>
-
-          <article class="t-item" role="listitem">
-            <div class="t-year">2021 - 2022</div>
-            <div class="t-body">
-              <h3>AppSec Analyst</h3>
-              <p class="muted">
-                Wrote clear remediation plans and built “least surprise” security checks
-                that developers actually keep enabled.
-              </p>
-              <div class="tags">
-                <span class="tag">secure review</span>
-                <span class="tag">static checks</span>
-                <span class="tag">threat modeling</span>
-              </div>
+          <article class="t-item">
+            <div class="t-year">2015.09 - 2020.07</div>
+            <div>
+              <h3>Wuhan University of Science and Technology | MBBS</h3>
+              <p>临床医学本科，建立扎实临床思维与医学基础。</p>
             </div>
           </article>
         </div>
       </section>
 
-      <section class="section" id="projects">
+      <section class="section" id="research">
         <div class="section-head">
-          <h2>Selected Projects</h2>
-          <div class="section-badge">vault / artifacts</div>
+          <h2>Research & Publications / 科研与论文</h2>
         </div>
-
         <div class="grid two">
           <article class="card">
-            <h3>HexAtlas</h3>
-            <p class="muted">
-              A visual diff companion for reverse engineers. Highlights structural changes in
-              reconstructed objects and generates concise summaries for issue trackers.
-            </p>
-            <div class="tags">
-              <span class="tag">diffing</span>
-              <span class="tag">analysis</span>
-              <span class="tag">reports</span>
-            </div>
+            <h3>Current Program / 当前课题</h3>
+            <ul class="list">
+              <li>开发患者来源肿瘤类器官平台进行高通量头颈癌药物筛选及机制研究（2024.9-）</li>
+              <li>类器官模型构建 + 细胞/分子实验 + 多组学生信 + 数据库开发</li>
+            </ul>
           </article>
-
           <article class="card">
-            <h3>NullFuzz</h3>
-            <p class="muted">
-              Harness generator that turns “unknown input formats” into deterministic fuzz targets.
-              Focuses on minimizing false positives by replaying sanitizer evidence.
-            </p>
-            <div class="tags">
-              <span class="tag">fuzz harness</span>
-              <span class="tag">sanitizers</span>
-              <span class="tag">evidence</span>
-            </div>
+            <h3>Previous Projects / 既往课题</h3>
+            <ul class="list">
+              <li>基于多组学的精准化诊疗在中晚期咽喉癌中的应用（2023.9-2024.8）</li>
+              <li>鼻用糖皮质激素对变应性鼻炎嗅觉影响机制与临床初探（2020.09-2022.12）</li>
+            </ul>
           </article>
-
           <article class="card">
-            <h3>PatchNotes</h3>
-            <p class="muted">
-              A lightweight changelog extractor for binaries: detects function-level changes,
-              ranks risk, and outputs human-friendly “why it matters” notes.
-            </p>
-            <div class="tags">
-              <span class="tag">risk scoring</span>
-              <span class="tag">function diffs</span>
-            </div>
+            <h3>Selected Publications / 代表论文</h3>
+            <ul class="list">
+              <li>The Lancet Oncology (Accepted, in press)</li>
+              <li>Oncology Research (Accepted, in press)</li>
+              <li>Environmental Toxicology; Journal of Applied Genetics</li>
+              <li>Discover Oncology (Review); BMC Medical Genomics; Disease Markers</li>
+            </ul>
           </article>
-
           <article class="card">
-            <h3>GhostPackets</h3>
-            <p class="muted">
-              Protocol replayer with state-aware scripts. Helps teams reproduce bugs reliably and
-              validate fixes across multiple environments.
-            </p>
-            <div class="tags">
-              <span class="tag">replay</span>
-              <span class="tag">state machine</span>
-              <span class="tag">testing</span>
-            </div>
+            <h3>Academic Service / 学术任职与奖励</h3>
+            <ul class="list">
+              <li>Reviewer: Discover Oncology, Scientific Reports, CIIM, BMC Oral Health</li>
+              <li>Editorial Board: Life Conflux, Head and Neck Diseases Conflux</li>
+              <li>CSC 高水平大学建设公派项目（博士）</li>
+              <li>首都医科大学研究生学业奖学金（2020-2023连续三年）</li>
+            </ul>
           </article>
         </div>
       </section>
 
       <section class="section" id="contact">
         <div class="section-head">
-          <h2>Contact</h2>
-          <div class="section-badge">handshake / ready</div>
+          <h2>Contact / 联系方式</h2>
         </div>
-
-        <div class="card">
-          <p class="muted">
-            Replace the placeholders with your real links. GitHub Pages will host this page as-is.
-          </p>
-
-          <div class="contact-grid">
-            <div>
-              <div class="contact-k">Email</div>
-              <div class="contact-v">
-                <a href="mailto:leo@example.com">leo@example.com</a>
-              </div>
-            </div>
-            <div>
-              <div class="contact-k">GitHub</div>
-              <div class="contact-v">
-                <a href="https://github.com/" target="_blank" rel="noreferrer">github.com/leo-nullbyte</a>
-              </div>
-            </div>
-            <div>
-              <div class="contact-k">Location Signal</div>
-              <div class="contact-v">
-                <span id="contactLocation">—</span>
-              </div>
-            </div>
-            <div>
-              <div class="contact-k">Availability</div>
-              <div class="contact-v" id="availability">—</div>
-            </div>
+        <div class="contact-card">
+          <div>
+            <div class="contact-k">Phone / 电话</div>
+            <div class="contact-v">13021986820</div>
           </div>
-
-          <hr class="divider" />
-
-          <p class="muted small">
-            Tip: click <b>Reroll</b> on the terminal to refresh the “randomized” parts.
-          </p>
+          <div>
+            <div class="contact-k">Email / 邮箱</div>
+            <div class="contact-v"><a href="mailto:lsk8870@163.com">lsk8870@163.com</a></div>
+          </div>
+          <div>
+            <div class="contact-k">Ethnicity / 民族</div>
+            <div class="contact-v">汉族</div>
+          </div>
+          <div>
+            <div class="contact-k">Status / 当前状态</div>
+            <div class="contact-v">PhD Candidate, Oncology</div>
+          </div>
         </div>
       </section>
-
-      <footer class="footer">
-        <div class="footer-left">
-          <span class="footer-sig">LC68</span>
-          <span class="muted">Vanilla Web Development • Hacker Resume • GitHub Pages</span>
-        </div>
-        <div class="footer-right">
-          <span class="muted small">No external dependencies</span>
-        </div>
-      </footer>
     </main>
+
+    <footer class="footer">
+      <span>© Shaokun Liu • Clinical-Translational Research Portfolio</span>
+      <span>Built with Vanilla HTML/CSS/JS for GitHub Pages</span>
+    </footer>
 
     <script defer src="assets/script.js"></script>
   </body>
