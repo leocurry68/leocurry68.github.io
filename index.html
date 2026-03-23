@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <title>LEO CURRY68 - Resume (Hacker Edition)</title>
+    <meta
+      name="description"
+      content="A hacker-style resume page for GitHub Pages. Pure vanilla HTML/CSS/JS."
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="sig">LC68</span>
+        <div class="brand-text">
+          <div class="glitch" data-glitch-text="LEO CURRY68">LEO CURRY68</div>
+          <div class="subtitle" id="randomSubtitle">loading…</div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="content" class="page">
+      <section class="hero">
+        <div class="hero-left">
+          <h1 class="title">
+            Security & Reverse Engineer
+            <span class="hint">/ alias: nullbyte</span>
+          </h1>
+          <p class="lede">
+            I break things on purpose: analyze binaries, hunt vulnerabilities, and ship
+            safer systems. This page is intentionally “vanilla” for GitHub Pages.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn primary" href="#contact">Request a chat</a>
+            <a class="btn ghost" href="#projects">See selected work</a>
+          </div>
+
+          <div class="meta-grid" role="list" aria-label="Quick facts">
+            <div class="meta" role="listitem">
+              <div class="meta-k">Location</div>
+              <div class="meta-v" id="randomLocation">—</div>
+            </div>
+            <div class="meta" role="listitem">
+              <div class="meta-k">Current Mode</div>
+              <div class="meta-v" id="randomMode">—</div>
+            </div>
+            <div class="meta" role="listitem">
+              <div class="meta-k">Focus</div>
+              <div class="meta-v" id="randomFocus">—</div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="terminal" aria-label="Terminal status">
+          <div class="terminal-head">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <div class="terminal-title">ops.log</div>
+          </div>
+
+          <pre class="terminal-body" id="terminalBody"><code><!-- filled by JS --></code></pre>
+
+          <div class="terminal-foot">
+            <button class="btn tiny" id="rerollBtn" type="button">Reroll</button>
+            <span class="terminal-note" id="checksum">checksum: —</span>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section" id="about">
+        <div class="section-head">
+          <h2>About</h2>
+          <div class="section-badge">volatile / resume</div>
+        </div>
+        <div class="card">
+          <p>
+            I prefer low-level clarity over buzzwords. My toolkit mixes static analysis,
+            dynamic instrumentation, fuzzing, and threat modeling.
+            I enjoy turning unclear “weird behavior” into deterministic test cases.
+          </p>
+          <p class="muted">
+            When I’m not reversing, I write small tools that keep teams fast:
+            parsers, diff scripts, and dashboards that answer “what changed?”
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="section-head">
+          <h2>Skills</h2>
+          <div class="section-badge">stack / signals</div>
+        </div>
+
+        <div class="grid">
+          <div class="card">
+            <h3>Reverse & Exploit</h3>
+            <ul class="list">
+              <li>Disassembly triage & call graph reconstruction</li>
+              <li>Memory corruption analysis (heap/stack)</li>
+              <li>ROP chain reasoning & mitigations</li>
+              <li>Protocol reversing & differential testing</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Engineering</h3>
+            <ul class="list">
+              <li>Python tooling & reproducible pipelines</li>
+              <li>Rust/C++ code reading & patching</li>
+              <li>CI hardening + secure-by-default checks</li>
+              <li>Telemetry for fast incident response</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Offense → Defense</h3>
+            <ul class="list">
+              <li>Threat models & abuse-case design</li>
+              <li>Fuzzing strategies & harnesses</li>
+              <li>Secure coding reviews & mitigations</li>
+              <li>Bug reports written for quick fixes</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Signature</h3>
+            <div class="pill-row" aria-label="Hacker traits">
+              <span class="pill">curious</span>
+              <span class="pill">methodical</span>
+              <span class="pill">low-noise</span>
+              <span class="pill">test-driven</span>
+              <span class="pill">no fear of hex</span>
+            </div>
+            <p class="muted">
+              My “best skill” is turning messy observations into a clean, shareable explanation.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="experience">
+        <div class="section-head">
+          <h2>Experience</h2>
+          <div class="section-badge">history / fragments</div>
+        </div>
+
+        <div class="timeline" role="list" aria-label="Experience timeline">
+          <article class="t-item" role="listitem">
+            <div class="t-year">2025</div>
+            <div class="t-body">
+              <h3>Security Engineer (Red Team Adjacent)</h3>
+              <p class="muted">
+                Led reverse-audit cycles on a legacy service: improved crash triage,
+                shipped fuzz harnesses, and reduced regression risk.
+              </p>
+              <div class="tags">
+                <span class="tag">fuzzing</span>
+                <span class="tag">crash triage</span>
+                <span class="tag">mitigations</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="t-item" role="listitem">
+            <div class="t-year">2023 - 2024</div>
+            <div class="t-body">
+              <h3>Firmware / Protocol Reverse Engineer</h3>
+              <p class="muted">
+                Built packet decoders and replay tools. Documented undocumented protocol states,
+                enabling safer integration and deterministic test suites.
+              </p>
+              <div class="tags">
+                <span class="tag">protocol reversing</span>
+                <span class="tag">instrumentation</span>
+                <span class="tag">replay tooling</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="t-item" role="listitem">
+            <div class="t-year">2021 - 2022</div>
+            <div class="t-body">
+              <h3>AppSec Analyst</h3>
+              <p class="muted">
+                Wrote clear remediation plans and built “least surprise” security checks
+                that developers actually keep enabled.
+              </p>
+              <div class="tags">
+                <span class="tag">secure review</span>
+                <span class="tag">static checks</span>
+                <span class="tag">threat modeling</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-head">
+          <h2>Selected Projects</h2>
+          <div class="section-badge">vault / artifacts</div>
+        </div>
+
+        <div class="grid two">
+          <article class="card">
+            <h3>HexAtlas</h3>
+            <p class="muted">
+              A visual diff companion for reverse engineers. Highlights structural changes in
+              reconstructed objects and generates concise summaries for issue trackers.
+            </p>
+            <div class="tags">
+              <span class="tag">diffing</span>
+              <span class="tag">analysis</span>
+              <span class="tag">reports</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>NullFuzz</h3>
+            <p class="muted">
+              Harness generator that turns “unknown input formats” into deterministic fuzz targets.
+              Focuses on minimizing false positives by replaying sanitizer evidence.
+            </p>
+            <div class="tags">
+              <span class="tag">fuzz harness</span>
+              <span class="tag">sanitizers</span>
+              <span class="tag">evidence</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>PatchNotes</h3>
+            <p class="muted">
+              A lightweight changelog extractor for binaries: detects function-level changes,
+              ranks risk, and outputs human-friendly “why it matters” notes.
+            </p>
+            <div class="tags">
+              <span class="tag">risk scoring</span>
+              <span class="tag">function diffs</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>GhostPackets</h3>
+            <p class="muted">
+              Protocol replayer with state-aware scripts. Helps teams reproduce bugs reliably and
+              validate fixes across multiple environments.
+            </p>
+            <div class="tags">
+              <span class="tag">replay</span>
+              <span class="tag">state machine</span>
+              <span class="tag">testing</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <div class="section-badge">handshake / ready</div>
+        </div>
+
+        <div class="card">
+          <p class="muted">
+            Replace the placeholders with your real links. GitHub Pages will host this page as-is.
+          </p>
+
+          <div class="contact-grid">
+            <div>
+              <div class="contact-k">Email</div>
+              <div class="contact-v">
+                <a href="mailto:leo@example.com">leo@example.com</a>
+              </div>
+            </div>
+            <div>
+              <div class="contact-k">GitHub</div>
+              <div class="contact-v">
+                <a href="https://github.com/" target="_blank" rel="noreferrer">github.com/leo-nullbyte</a>
+              </div>
+            </div>
+            <div>
+              <div class="contact-k">Location Signal</div>
+              <div class="contact-v">
+                <span id="contactLocation">—</span>
+              </div>
+            </div>
+            <div>
+              <div class="contact-k">Availability</div>
+              <div class="contact-v" id="availability">—</div>
+            </div>
+          </div>
+
+          <hr class="divider" />
+
+          <p class="muted small">
+            Tip: click <b>Reroll</b> on the terminal to refresh the “randomized” parts.
+          </p>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-left">
+          <span class="footer-sig">LC68</span>
+          <span class="muted">Vanilla Web Development • Hacker Resume • GitHub Pages</span>
+        </div>
+        <div class="footer-right">
+          <span class="muted small">No external dependencies</span>
+        </div>
+      </footer>
+    </main>
+
+    <script defer src="assets/script.js"></script>
+  </body>
+</html>
+
